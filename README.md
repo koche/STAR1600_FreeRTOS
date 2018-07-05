@@ -1,0 +1,6 @@
+# STAR1600
+STAR1600 SDK
+
+
+Board Model Name: STAR1600
+

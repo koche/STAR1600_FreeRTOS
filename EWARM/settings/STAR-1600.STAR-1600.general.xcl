@@ -1,0 +1,15 @@
+"C:\Program Files\IAR Systems\Embedded Workbench 7.2\arm\bin\armproc.dll" 
+
+"C:\Program Files\IAR Systems\Embedded Workbench 7.2\arm\bin\armstlink.dll" 
+
+"M:\work\STM32L4\STAR-1600\EWARM\STAR-1600\Exe\STAR-1600.out" 
+
+--plugin "C:\Program Files\IAR Systems\Embedded Workbench 7.2\arm\bin\armbat.dll" 
+
+--device_macro "C:\Program Files\IAR Systems\Embedded Workbench 7.2\arm\config\debugger\ST\STM32L4xx.dmac" 
+
+--flash_loader "C:\Program Files\IAR Systems\Embedded Workbench 7.2\arm\config\flashloader\ST\FlashSTM32L4xxxE.board" 
+
+
+
+
