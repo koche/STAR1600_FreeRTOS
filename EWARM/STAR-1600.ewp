@@ -598,15 +598,15 @@
         <option>
           <name>OOCOutputFormat</name>
           <version>2</version>
-          <state>0</state>
+          <state>2</state>
         </option>
         <option>
           <name>OCOutputOverride</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>OOCOutputFile</name>
-          <state>Project.srec</state>
+          <state>STAR-1600.bin</state>
         </option>
         <option>
           <name>OOCCommandLineProducer</name>
@@ -614,7 +614,7 @@
         </option>
         <option>
           <name>OOCObjCopyEnable</name>
-          <state>0</state>
+          <state>1</state>
         </option>
       </data>
     </settings>
@@ -976,6 +976,9 @@
     </group>
     <group>
       <name>testProg</name>
+      <file>
+        <name>$PROJ_DIR$\..\Src\testProg\stm32L4_eval.c</name>
+      </file>
     </group>
     <group>
       <name>User</name>

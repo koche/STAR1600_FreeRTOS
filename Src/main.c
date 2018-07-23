@@ -84,7 +84,7 @@ void MX_FREERTOS_Init(void);
 /* USER CODE END PFP */
 
 /* USER CODE BEGIN 0 */
-
+int modbus_sample();
 /* USER CODE END 0 */
 
 int main(void)
