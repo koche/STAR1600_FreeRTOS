@@ -90,20 +90,20 @@ int ModbusDevWriteOneWord(unsigned char  addr, unsigned short reg, unsigned shor
 void ModbusDevTestTask(void const * argument)
 {
   int             addr;
-  unsigned short  reg;
+  unsigned short  vol, cur, watt, wh;
   
   addr = 0x01;
   
   ModbusDevInit();
   while(1)
   {
+    vol  = ModbusDevReadOneReg(addr, 0x9C, 2);  
+    cur  = ModbusDevReadOneReg(addr, 0xA4, 2);
+    watt = ModbusDevReadOneReg(addr, 0xAC, 2);
+    wh   = ModbusDevReadOneReg(addr, 0xC6, 2);
 
-    reg = 0xAC;
-    printf("reg %04X = %d\n",reg, ModbusDevReadOneReg(addr, reg, 2));
+    printf("voltage = %.1f V    current= %d mA\nwatt = %d Watt        wh=%d WH\n", vol/10.0, cur, watt, wh);
 
-    reg = 0xC6;
-    printf("reg %04X = %d\n",reg, ModbusDevReadOneReg(addr, reg, 2));
-    
     ModbusDevDelay(10000);
   }
   
@@ -119,4 +119,6 @@ int modbus_sample()
    ModbusDevTestTaskHandle = osThreadCreate(osThread(ModbusDevTestTask_Name), NULL);
    if(ModbusDevTestTaskHandle == NULL)
      printf("ModbusDevTestTaskHandle error\n");
+   
+   return 0;
 }

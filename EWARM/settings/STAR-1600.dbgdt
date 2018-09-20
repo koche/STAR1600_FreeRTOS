@@ -19,7 +19,7 @@
           
           
           
-        <Column0>197</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+        <Column0>256</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
       </Workspace>
       <Disassembly>
         <col-names>
@@ -33,8 +33,8 @@
         <DisasmHistory/>
         
         
-      <ShowCodeCoverage>1</ShowCodeCoverage><ShowInstrProfiling>1</ShowInstrProfiling></Disassembly>
-    <TerminalIO><InputSource>1</InputSource><InputMode>10</InputMode><Filename>$PROJ_DIR$\TermIOInput.txt</Filename><InputEcho>1</InputEcho><ShowReset>0</ShowReset></TerminalIO></Static>
+      <PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows><ShowCodeCoverage>1</ShowCodeCoverage><ShowInstrProfiling>1</ShowInstrProfiling></Disassembly>
+    <TerminalIO><PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows><InputSource>1</InputSource><InputMode>10</InputMode><Filename>$PROJ_DIR$\TermIOInput.txt</Filename><InputEcho>1</InputEcho><ShowReset>0</ShowReset></TerminalIO><StaticWatch><expressions><item></item></expressions><col-names><item>Expression</item><item>Location</item><item>Type</item><item>Value</item></col-names><col-widths><item>100</item><item>150</item><item>100</item><item>100</item></col-widths></StaticWatch><WATCH_1><expressions><item>sendData</item><item>sendDataSize</item><item></item></expressions><col-names><item>Expression</item><item>Location</item><item>Type</item><item>Value</item></col-names><col-widths><item>100</item><item>150</item><item>100</item><item>436</item></col-widths></WATCH_1></Static>
     <Windows>
       
       
@@ -55,7 +55,7 @@
           </Tab>
         </Tabs>
         
-      <SelectedTab>0</SelectedTab></Wnd0><Wnd3>
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd1>
         <Tabs>
           <Tab>
             <Identity>TabID-18646-6598</Identity>
@@ -67,30 +67,20 @@
           </Tab>
         </Tabs>
         
-      <SelectedTab>0</SelectedTab></Wnd3><Wnd4>
-        <Tabs>
-          <Tab>
-            <Identity>TabID-29395-6601</Identity>
-            <TabName>Disassembly</TabName>
-            <Factory>Disassembly</Factory>
-            <Session/>
-          </Tab>
-        </Tabs>
-        
-      <SelectedTab>0</SelectedTab></Wnd4><Wnd5><Tabs><Tab><Identity>TabID-2246-3022</Identity><TabName>Terminal I/O</TabName><Factory>TerminalIO</Factory><Session/></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd5></Windows>
+      <SelectedTab>0</SelectedTab></Wnd1><Wnd2><Tabs><Tab><Identity>TabID-6227-22494</Identity><TabName>Live Watch</TabName><Factory>StaticWatch</Factory></Tab><Tab><Identity>TabID-5181-22514</Identity><TabName>Watch 1</TabName><Factory>WATCH_1</Factory></Tab></Tabs><SelectedTab>1</SelectedTab></Wnd2></Windows>
     <Editor>
       
       
       
       
-    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Src\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>78</YPos2><SelStart2>3832</SelStart2><SelEnd2>3832</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>326</YPos2><SelStart2>13643</SelStart2><SelEnd2>13643</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\example\modbus\modbus_sample.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>6</YPos2><SelStart2>236</SelStart2><SelEnd2>236</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Src\stm32l4xx_callback.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Library\modbus_rtu.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>152</SelStart2><SelEnd2>152</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Src\freertos.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>119</YPos2><SelStart2>652</SelStart2><SelEnd2>652</SelEnd2></Tab><ActiveTab>5</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Src\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>74</YPos2><SelStart2>3884</SelStart2><SelEnd2>3884</SelEnd2></Tab><ActiveTab>0</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\example\modbus\modbus_sample.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>90</YPos2><SelStart2>2028</SelStart2><SelEnd2>2028</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\example\sigfox\uart_TX_RX_WS211x_sigfox.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>148</YPos2><SelStart2>4319</SelStart2><SelEnd2>4319</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Src\testProg\stm32L4_eval.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>680</SelStart2><SelEnd2>680</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Src\testProg\stm32L4_eval.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>71</SelStart2><SelEnd2>71</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Src\stm32l4xx_callback.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>473</SelStart2><SelEnd2>473</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Middlewares\Third_Party\FreeRTOS\Source\tasks.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>3117</YPos2><SelStart2>105919</SelStart2><SelEnd2>105919</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Src\usart.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>57</YPos2><SelStart2>982</SelStart2><SelEnd2>982</SelEnd2></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
     <Positions>
       
       
       
       
       
-    <Top><Row0><Sizes><Toolbar-014969A0><key>iaridepm.enu1</key></Toolbar-014969A0></Sizes></Row0><Row1><Sizes><Toolbar-0ADC96E0><key>debuggergui.enu1</key></Toolbar-0ADC96E0></Sizes></Row1><Row2><Sizes><Toolbar-0AB34258><key>armstlink.enu1</key></Toolbar-0AB34258></Sizes></Row2></Top><Left><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>454</Bottom><Right>291</Right><x>-2</x><y>-2</y><xscreen>167</xscreen><yscreen>159</yscreen><sizeHorzCX>104375</sizeHorzCX><sizeHorzCY>224894</sizeHorzCY><sizeVertCX>183125</sizeVertCX><sizeVertCY>644979</sizeVertCY></Rect></Wnd3></Sizes></Row0></Left><Right><Row0><Sizes><Wnd4><Rect><Top>-2</Top><Left>-2</Left><Bottom>454</Bottom><Right>277</Right><x>-2</x><y>-2</y><xscreen>167</xscreen><yscreen>159</yscreen><sizeHorzCX>104375</sizeHorzCX><sizeHorzCY>224894</sizeHorzCY><sizeVertCX>174375</sizeVertCX><sizeVertCY>644979</sizeVertCY></Rect></Wnd4></Sizes></Row0><Row1><Sizes><Wnd5><Rect><Top>-2</Top><Left>275</Left><Bottom>454</Bottom><Right>496</Right><x>275</x><y>-2</y><xscreen>167</xscreen><yscreen>159</yscreen><sizeHorzCX>104375</sizeHorzCX><sizeHorzCY>224894</sizeHorzCY><sizeVertCX>138125</sizeVertCX><sizeVertCY>644979</sizeVertCY></Rect></Wnd5></Sizes></Row1></Right><Bottom><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>157</Bottom><Right>1602</Right><x>-2</x><y>-2</y><xscreen>1604</xscreen><yscreen>159</yscreen><sizeHorzCX>1002500</sizeHorzCX><sizeHorzCY>224894</sizeHorzCY><sizeVertCX>104375</sizeVertCX><sizeVertCY>224894</sizeVertCY></Rect></Wnd0></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+    <Top><Row0><Sizes><Toolbar-014969A0><key>iaridepm.enu1</key></Toolbar-014969A0></Sizes></Row0><Row1><Sizes><Toolbar-063EB6F0><key>debuggergui.enu1</key></Toolbar-063EB6F0></Sizes></Row1><Row2><Sizes><Toolbar-0BE3E720><key>armstlink.enu1</key></Toolbar-0BE3E720></Sizes></Row2></Top><Left><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>594</Bottom><Right>350</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>199</yscreen><sizeHorzCX>104167</sizeHorzCX><sizeHorzCY>224352</sizeHorzCY><sizeVertCX>183333</sizeVertCX><sizeVertCY>671928</sizeVertCY></Rect></Wnd1></Sizes></Row0></Left><Right><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>594</Bottom><Right>589</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>104167</sizeHorzCX><sizeHorzCY>225479</sizeHorzCY><sizeVertCX>307813</sizeVertCX><sizeVertCY>671928</sizeVertCY></Rect></Wnd2></Sizes></Row0></Right><Bottom><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>197</Bottom><Right>1922</Right><x>-2</x><y>-2</y><xscreen>1924</xscreen><yscreen>199</yscreen><sizeHorzCX>1002083</sizeHorzCX><sizeHorzCY>224352</sizeHorzCY><sizeVertCX>104167</sizeVertCX><sizeVertCY>224352</sizeVertCY></Rect></Wnd0></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
   </Desktop>
 </Project>
 

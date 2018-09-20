@@ -170,7 +170,7 @@
 
   <Group>
     <GroupName>Application/User</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -1205,17 +1205,30 @@
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
+    <File>
+      <GroupNumber>9</GroupNumber>
+      <FileNumber>76</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\example\sigfox\uart_TX_RX_WS211x_sigfox.c</PathWithFileName>
+      <FilenameWithoutPath>uart_TX_RX_WS211x_sigfox.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
   </Group>
 
   <Group>
     <GroupName>Library</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
     <File>
       <GroupNumber>10</GroupNumber>
-      <FileNumber>76</FileNumber>
+      <FileNumber>77</FileNumber>
       <FileType>4</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
@@ -1223,6 +1236,27 @@
       <bDave2>0</bDave2>
       <PathWithFileName>..\Library\libModbusRTU.lib</PathWithFileName>
       <FilenameWithoutPath>libModbusRTU.lib</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+  </Group>
+
+  <Group>
+    <GroupName>BSP_STM32L4-INNO</GroupName>
+    <tvExp>0</tvExp>
+    <tvExpOptDlg>0</tvExpOptDlg>
+    <cbSel>0</cbSel>
+    <RteFlg>0</RteFlg>
+    <File>
+      <GroupNumber>11</GroupNumber>
+      <FileNumber>78</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\BSP_STM32L4-INNO\stm32L4_eval.c</PathWithFileName>
+      <FilenameWithoutPath>stm32L4_eval.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

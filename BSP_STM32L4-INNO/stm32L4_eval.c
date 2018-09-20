@@ -1,5 +1,7 @@
 #include "main.h"
 #include "usart.h"
+#include "stm32L4_eval.h"
+
 
 #if 1
 #ifdef __GNUC__
@@ -21,5 +23,3 @@ PUTCHAR_PROTOTYPE
   return ch;
 }
 #endif
-
-

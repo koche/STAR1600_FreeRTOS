@@ -348,7 +348,7 @@
           <Cads>
             <interw>1</interw>
             <Optim>4</Optim>
-            <oTime>0</oTime>
+            <oTime>1</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
             <Strict>0</Strict>
@@ -360,12 +360,12 @@
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <uC99>0</uC99>
-            <useXO>0</useXO>
+            <useXO>1</useXO>
             <VariousControls>
               <MiscControls>--C99</MiscControls>
               <Define>USE_HAL_DRIVER,STM32L475xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc;../Drivers/STM32L4xx_HAL_Driver/Inc;../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Middlewares/ST/STM32_USB_Device_Library/Core/Inc;../Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc;../Drivers/CMSIS/Device/ST/STM32L4xx/Include;../Middlewares/Third_Party/FatFs/src;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;../Drivers/CMSIS/Include;../Library;../example/modbus</IncludePath>
+              <IncludePath>../Inc;../Drivers/STM32L4xx_HAL_Driver/Inc;../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Middlewares/ST/STM32_USB_Device_Library/Core/Inc;../Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc;../Drivers/CMSIS/Device/ST/STM32L4xx/Include;../Middlewares/Third_Party/FatFs/src;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;../Drivers/CMSIS/Include;../Library;../example/modbus;../BSP_STM32L4-INNO</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -821,6 +821,11 @@
               <FileType>1</FileType>
               <FilePath>..\example\modbus\modbus_sample.c</FilePath>
             </File>
+            <File>
+              <FileName>uart_TX_RX_WS211x_sigfox.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\example\sigfox\uart_TX_RX_WS211x_sigfox.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -830,6 +835,16 @@
               <FileName>libModbusRTU.lib</FileName>
               <FileType>4</FileType>
               <FilePath>..\Library\libModbusRTU.lib</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>BSP_STM32L4-INNO</GroupName>
+          <Files>
+            <File>
+              <FileName>stm32L4_eval.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP_STM32L4-INNO\stm32L4_eval.c</FilePath>
             </File>
           </Files>
         </Group>

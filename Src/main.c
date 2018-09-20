@@ -85,6 +85,7 @@ void MX_FREERTOS_Init(void);
 
 /* USER CODE BEGIN 0 */
 int modbus_sample();
+void UART_WS211x_Fun();
 /* USER CODE END 0 */
 
 int main(void)
@@ -129,6 +130,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
   printf("START-1600 system start\n");
   modbus_sample();
+  UART_WS211x_Fun();
   /* USER CODE END 2 */
 
   /* Call init function for freertos objects (in freertos.c) */

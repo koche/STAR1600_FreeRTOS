@@ -18,14 +18,14 @@
           
           
           
-        <Column0>276</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+        <Column0>326</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
       </Workspace>
       <TerminalIO/>
-    <Debug-Log><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1528</ColumnWidth1></Debug-Log></Static>
+    <Debug-Log><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1528</ColumnWidth1></Debug-Log><Find-All-References><ColumnWidth0>664</ColumnWidth0><ColumnWidth1>94</ColumnWidth1><ColumnWidth2>1138</ColumnWidth2></Find-All-References></Static>
     <Windows>
       
       
-    <Wnd0>
+    <Wnd1>
         <Tabs>
           <Tab>
             <Identity>TabID-25881-4211</Identity>
@@ -33,11 +33,11 @@
             <Factory>Workspace</Factory>
             <Session>
               
-            <NodeDict><ExpandedNode>STAR-1600</ExpandedNode><ExpandedNode>STAR-1600/Application</ExpandedNode><ExpandedNode>STAR-1600/Application/testProg</ExpandedNode><ExpandedNode>STAR-1600/Drivers</ExpandedNode><ExpandedNode>STAR-1600/Library</ExpandedNode><ExpandedNode>STAR-1600/Middlewares</ExpandedNode><ExpandedNode>STAR-1600/Output</ExpandedNode></NodeDict></Session>
+            <NodeDict><ExpandedNode>STAR-1600</ExpandedNode><ExpandedNode>STAR-1600/Application</ExpandedNode><ExpandedNode>STAR-1600/Application/BSP_STM32L4-INNO</ExpandedNode><ExpandedNode>STAR-1600/Application/User</ExpandedNode><ExpandedNode>STAR-1600/Application/example</ExpandedNode><ExpandedNode>STAR-1600/Application/example/modbus</ExpandedNode><ExpandedNode>STAR-1600/Application/example/sigfox</ExpandedNode><ExpandedNode>STAR-1600/Drivers</ExpandedNode><ExpandedNode>STAR-1600/Library</ExpandedNode><ExpandedNode>STAR-1600/Middlewares</ExpandedNode><ExpandedNode>STAR-1600/Output</ExpandedNode></NodeDict></Session>
           </Tab>
         </Tabs>
         
-      <SelectedTab>0</SelectedTab></Wnd0><Wnd1>
+      <SelectedTab>0</SelectedTab></Wnd1><Wnd4>
         <Tabs>
           <Tab>
             <Identity>TabID-3862-4214</Identity>
@@ -45,22 +45,22 @@
             <Factory>Build</Factory>
             <Session/>
           </Tab>
-        <Tab><Identity>TabID-27441-13561</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab></Tabs>
+        <Tab><Identity>TabID-27441-13561</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab><Tab><Identity>TabID-2846-1571</Identity><TabName>References</TabName><Factory>Find-All-References</Factory><Session/></Tab></Tabs>
         
-      <SelectedTab>0</SelectedTab></Wnd1></Windows>
+      <SelectedTab>0</SelectedTab></Wnd4></Windows>
     <Editor>
       
       
       
       
-    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Src\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>78</YPos2><SelStart2>3832</SelStart2><SelEnd2>3832</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>326</YPos2><SelStart2>13643</SelStart2><SelEnd2>13643</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\example\modbus\modbus_sample.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>6</YPos2><SelStart2>236</SelStart2><SelEnd2>236</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Src\stm32l4xx_callback.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Library\modbus_rtu.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>152</SelStart2><SelEnd2>152</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Src\freertos.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>112</YPos2><SelStart2>4718</SelStart2><SelEnd2>4718</SelEnd2></Tab><ActiveTab>5</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\example\sigfox\uart_TX_RX_WS211x_sigfox.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>107</SelStart2><SelEnd2>107</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Src\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>108</YPos2><SelStart2>4677</SelStart2><SelEnd2>4677</SelEnd2></Tab><ActiveTab>1</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
     <Positions>
       
       
       
       
       
-    <Top><Row0><Sizes><Toolbar-014969A0><key>iaridepm.enu1</key></Toolbar-014969A0></Sizes></Row0></Top><Left><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>471</Bottom><Right>350</Right><x>-2</x><y>-2</y><xscreen>129</xscreen><yscreen>103</yscreen><sizeHorzCX>80625</sizeHorzCX><sizeHorzCY>145686</sizeHorzCY><sizeVertCX>220000</sizeVertCX><sizeVertCY>669024</sizeVertCY></Rect></Wnd0></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>188</Bottom><Right>1602</Right><x>-2</x><y>-2</y><xscreen>1604</xscreen><yscreen>190</yscreen><sizeHorzCX>1002500</sizeHorzCX><sizeHorzCY>268741</sizeHorzCY><sizeVertCX>80625</sizeVertCX><sizeVertCY>145686</sizeVertCY></Rect></Wnd1></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+    <Top><Row0><Sizes><Toolbar-014969A0><key>iaridepm.enu1</key></Toolbar-014969A0></Sizes></Row0></Top><Left><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>624</Bottom><Right>420</Right><x>-2</x><y>-2</y><xscreen>155</xscreen><yscreen>129</yscreen><sizeHorzCX>80729</sizeHorzCX><sizeHorzCY>145434</sizeHorzCY><sizeVertCX>219792</sizeVertCX><sizeVertCY>705750</sizeVertCY></Rect></Wnd1></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd4><Rect><Top>-2</Top><Left>-2</Left><Bottom>215</Bottom><Right>1922</Right><x>-2</x><y>-2</y><xscreen>1924</xscreen><yscreen>217</yscreen><sizeHorzCX>1002083</sizeHorzCX><sizeHorzCY>244645</sizeHorzCY><sizeVertCX>80729</sizeVertCX><sizeVertCY>145434</sizeVertCY></Rect></Wnd4></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
   </Desktop>
 </Workspace>
 
