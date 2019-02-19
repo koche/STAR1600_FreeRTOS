@@ -8,12 +8,6 @@ static Modbus_Callback modbusCallback;
 
 extern UART_HandleTypeDef huart3;
 
-int ModbusDevInit();
-int ModbusDevReadOneReg(unsigned char  addr, unsigned short start_reg, unsigned short nb);
-int ModbusDevWriteOneWord(unsigned char  addr, unsigned short reg, unsigned short writeData);
-int ModbusDevDeinit();
-
-
 int ModbusDevInit()
 {
   int ret=0;
@@ -28,7 +22,6 @@ int ModbusDevInit()
   modbusCallback.osDelay = osDelay;
   MODBUS_Register_Callback(&modbusCallback);
 
-  ModbusDevReadOneReg(0x01, 0x0000, 2);
   return ret;
 }
 
@@ -96,22 +89,22 @@ int ModbusDevWriteOneWord(unsigned char  addr, unsigned short reg, unsigned shor
 
 void ModbusDevTestTask(void const * argument)
 {
-  int           i, addr;
-  signed short  ret, vol, cur, watt, wh;
+  int             addr;
+  unsigned short  vol, cur, watt, wh;
   
-  addr = 0x03;
+  addr = 0x01;
   
   ModbusDevInit();
   while(1)
   {
-    vol  = ModbusDevReadOneReg(addr, 0x9C, 2);
+    vol  = ModbusDevReadOneReg(addr, 0x9C, 2);  
     cur  = ModbusDevReadOneReg(addr, 0xA4, 2);
     watt = ModbusDevReadOneReg(addr, 0xAC, 2);
     wh   = ModbusDevReadOneReg(addr, 0xC6, 2);
 
     printf("voltage = %.1f V    current= %d mA\nwatt = %d Watt        wh=%d WH\n", vol/10.0, cur, watt, wh);
 
-    
+    ModbusDevDelay(10000);
   }
   
   ModbusDevDeinit();

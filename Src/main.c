@@ -85,7 +85,7 @@ void MX_FREERTOS_Init(void);
 
 /* USER CODE BEGIN 0 */
 int modbus_sample();
-
+void UART_WS211x_Fun();
 /* USER CODE END 0 */
 
 int main(void)
@@ -114,13 +114,12 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_DMA_Init();
-  MX_I2C1_Init();
   MX_I2C2_Init();
   MX_SPI1_Init();
   MX_RTC_Init();
   MX_SDMMC1_SD_Init();
   MX_SPI3_Init();
-  //MX_SPI2_Init();
+  MX_SPI2_Init();
   MX_USART3_UART_Init();
   MX_USART1_UART_Init();
   MX_USART2_UART_Init();
@@ -131,7 +130,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
   printf("START-1600 system start\n");
   modbus_sample();
-  //UART_WS211x_Fun();
+  UART_WS211x_Fun();
   /* USER CODE END 2 */
 
   /* Call init function for freertos objects (in freertos.c) */

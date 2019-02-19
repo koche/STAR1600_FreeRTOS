@@ -50,7 +50,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "gpio.h"
 /* USER CODE BEGIN 0 */
-void MX_GPIO_Init_IRQ(void);
+
 /* USER CODE END 0 */
 
 /*----------------------------------------------------------------------------*/
@@ -86,21 +86,8 @@ void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOE, MCU_DIR_Pin|SPI2_NSS_Pin|GPIO_PIN_0, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-#if (STAR_1600_V2)
-  GPIO_InitStruct.Pin = PW_EN_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
-  
-  HAL_GPIO_WritePin(GPIOE, PW_EN_Pin, GPIO_PIN_SET);
-  
-  HAL_GPIO_WritePin(GPIOE, SIP_INT_Pin, GPIO_PIN_RESET);
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOC, AL_PD_Pin|SIP_RESET_Pin|SIP_HIBERNATE_Pin, GPIO_PIN_RESET);
-#else
-  HAL_GPIO_WritePin(GPIOC, SIP_PW_EN_Pin|SIP_INT_Pin|AL_PD_Pin|SIP_RESET_Pin|SIP_HIBERNATE_Pin, GPIO_PIN_RESET);
-#endif
+  HAL_GPIO_WritePin(GPIOC, SIP_PW_EN_Pin|SIP_INT_Pin|AL_PD_Pin|SIP_RESET_Pin 
+                          |SIP_HIBERNATE_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOA, LED0_Pin|SPI1_CS_Pin|LED1_Pin, GPIO_PIN_RESET);
@@ -110,7 +97,7 @@ void MX_GPIO_Init(void)
 
   /*Configure GPIO pin : PtPin */
   GPIO_InitStruct.Pin = Button_2_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING_FALLING;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(Button_2_GPIO_Port, &GPIO_InitStruct);
 
@@ -124,21 +111,12 @@ void MX_GPIO_Init(void)
   /*Configure GPIO pins : PE5 PE6 PE7 PE8 
                            PE9 PE10 PE11 PE12 
                            PE13 PE14 PE15 PE1 */
-#if (STAR_1600_V2)
-  GPIO_InitStruct.Pin = GPIO_PIN_5|GPIO_PIN_6|GPIO_PIN_7|GPIO_PIN_8 
-                          |GPIO_PIN_10|GPIO_PIN_11|GPIO_PIN_12 
-                          |GPIO_PIN_13|GPIO_PIN_14|GPIO_PIN_15;
-  GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
-#else
   GPIO_InitStruct.Pin = GPIO_PIN_5|GPIO_PIN_6|GPIO_PIN_7|GPIO_PIN_8 
                           |GPIO_PIN_9|GPIO_PIN_10|GPIO_PIN_11|GPIO_PIN_12 
                           |GPIO_PIN_13|GPIO_PIN_14|GPIO_PIN_15|GPIO_PIN_1;
   GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
-#endif
 
   /*Configure GPIO pins : PC13 PC2 PC6 PC7 */
   GPIO_InitStruct.Pin = GPIO_PIN_13|GPIO_PIN_2|GPIO_PIN_6|GPIO_PIN_7;
@@ -148,28 +126,18 @@ void MX_GPIO_Init(void)
 
   /*Configure GPIO pins : PCPin PCPin PCPin PCPin 
                            PCPin */
-#if (STAR_1600_V2)
-  GPIO_InitStruct.Pin = SIP_INT_Pin|AL_PD_Pin|SIP_RESET_Pin 
-                          |SIP_HIBERNATE_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
-
-#else
   GPIO_InitStruct.Pin = SIP_PW_EN_Pin|SIP_INT_Pin|AL_PD_Pin|SIP_RESET_Pin 
                           |SIP_HIBERNATE_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
-#endif
 
-  /*Configure GPIO pins : PAPin PA9 */
-  GPIO_InitStruct.Pin = Button_1_Pin|GPIO_PIN_9;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  /*Configure GPIO pin : PtPin */
+  GPIO_InitStruct.Pin = Button_1_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+  HAL_GPIO_Init(Button_1_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PAPin PAPin PAPin */
   GPIO_InitStruct.Pin = LED0_Pin|SPI1_CS_Pin|LED1_Pin;
@@ -188,19 +156,11 @@ void MX_GPIO_Init(void)
 
   /*Configure GPIO pins : PD10 PD11 PD12 PD0 
                            PD1 PD3 PD4 PD7 */
-#if (STAR_1600_V2)
-  GPIO_InitStruct.Pin = GPIO_PIN_10|GPIO_PIN_11|GPIO_PIN_0 
-                          |GPIO_PIN_1|GPIO_PIN_3|GPIO_PIN_4|GPIO_PIN_7;
-  GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
-#else
   GPIO_InitStruct.Pin = GPIO_PIN_10|GPIO_PIN_11|GPIO_PIN_12|GPIO_PIN_0 
                           |GPIO_PIN_1|GPIO_PIN_3|GPIO_PIN_4|GPIO_PIN_7;
   GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
-#endif
 
   /*Configure GPIO pin : PtPin */
   GPIO_InitStruct.Pin = Charge_EN_Pin;
@@ -227,26 +187,18 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  //MX_GPIO_Init_IRQ();
+  /*Configure GPIO pin : PA9 */
+  GPIO_InitStruct.Pin = GPIO_PIN_9;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
 }
-#if 0
-void MX_GPIO_Init_IRQ(void)
-{
+
 /* USER CODE BEGIN 2 */
-  /* Enable and set EXTI Line Interrupt to the lowest priority */
-  HAL_NVIC_SetPriority(EXTI0_IRQn, 5, 3);            /* Button 1 */
-  HAL_NVIC_EnableIRQ(EXTI0_IRQn);
-#if (STAR_1600_V2)
-  HAL_NVIC_SetPriority(EXTI15_10_IRQn, 5, 3); 		   /* Button 2 */
-  HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
-#else
-  HAL_NVIC_SetPriority(EXTI2_IRQn, 5, 3);            /* Button 2 */
-  HAL_NVIC_EnableIRQ(EXTI2_IRQn);
-#endif
 
 /* USER CODE END 2 */
-}
-#endif
+
 /**
   * @}
   */

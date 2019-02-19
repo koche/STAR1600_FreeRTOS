@@ -57,12 +57,17 @@
 /* USER CODE END Includes */
 
 /* Private define ------------------------------------------------------------*/
-#define STAR_1600_V2		1 //Set 1 for STAR1600v02; Set 0 for STAR1600V01
 
+#define Button_2_Pin GPIO_PIN_2
+#define Button_2_GPIO_Port GPIOE
 #define MCU_DIR_Pin GPIO_PIN_3
 #define MCU_DIR_GPIO_Port GPIOE
 #define SPI2_NSS_Pin GPIO_PIN_4
 #define SPI2_NSS_GPIO_Port GPIOE
+#define SIP_PW_EN_Pin GPIO_PIN_0
+#define SIP_PW_EN_GPIO_Port GPIOC
+#define SIP_INT_Pin GPIO_PIN_1
+#define SIP_INT_GPIO_Port GPIOC
 #define AL_PD_Pin GPIO_PIN_3
 #define AL_PD_GPIO_Port GPIOC
 #define Button_1_Pin GPIO_PIN_0
@@ -81,23 +86,6 @@
 #define SDIO_CD_GPIO_Port GPIOD
 #define LED1_Pin GPIO_PIN_10
 #define LED1_GPIO_Port GPIOA
-
-#if (STAR_1600_V2)
-#define Button_2_Pin GPIO_PIN_12
-#define Button_2_GPIO_Port GPIOD
-#define PW_EN_Pin GPIO_PIN_9
-#define PW_EN_GPIO_Port GPIOE
-#define SIP_INT_Pin GPIO_PIN_1
-#define SIP_INT_GPIO_Port GPIOE
-#else
-#define Button_2_Pin GPIO_PIN_2
-#define Button_2_GPIO_Port GPIOE
-#define SIP_PW_EN_Pin GPIO_PIN_0
-#define SIP_PW_EN_GPIO_Port GPIOC
-#define SIP_INT_Pin GPIO_PIN_1
-#define SIP_INT_GPIO_Port GPIOC
-#endif
-
 
 /* ########################## Assert Selection ############################## */
 /**
