@@ -234,7 +234,7 @@
         <option>
           <name>CCAllowList</name>
           <version>1</version>
-          <state>11111110</state>
+          <state>00000000</state>
         </option>
         <option>
           <name>CCDebugInfo</name>
@@ -334,7 +334,7 @@
         </option>
         <option>
           <name>CCOptLevel</name>
-          <state>3</state>
+          <state>0</state>
         </option>
         <option>
           <name>CCOptStrategy</name>
@@ -343,7 +343,7 @@
         </option>
         <option>
           <name>CCOptLevelSlave</name>
-          <state>3</state>
+          <state>0</state>
         </option>
         <option>
           <name>CompilerMisraRules98</name>
@@ -960,6 +960,12 @@
   <group>
     <name>Application</name>
     <group>
+      <name>BSP_STM32L4-INNO</name>
+      <file>
+        <name>$PROJ_DIR$\..\BSP_STM32L4-INNO\stm32L4_eval.c</name>
+      </file>
+    </group>
+    <group>
       <name>EWARM</name>
       <file>
         <name>$PROJ_DIR$\startup_stm32l475xx.s</name>
@@ -973,18 +979,6 @@
           <name>$PROJ_DIR$\..\example\modbus\modbus_sample.c</name>
         </file>
       </group>
-      <group>
-        <name>sigfox</name>
-        <file>
-          <name>$PROJ_DIR$\..\example\sigfox\uart_TX_RX_WS211x_sigfox.c</name>
-        </file>
-      </group>
-    </group>
-    <group>
-      <name>BSP_STM32L4-INNO</name>
-      <file>
-        <name>$PROJ_DIR$\..\BSP_STM32L4-INNO\stm32L4_eval.c</name>
-      </file>
     </group>
     <group>
       <name>User</name>

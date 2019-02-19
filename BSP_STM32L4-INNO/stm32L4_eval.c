@@ -3,7 +3,7 @@
 #include "stm32L4_eval.h"
 
 
-#if 1
+#if 0
 #ifdef __GNUC__
 /* With GCC/RAISONANCE, small printf (option LD Linker->Libraries->Small printf
    set to 'Yes') calls __io_putchar() */
