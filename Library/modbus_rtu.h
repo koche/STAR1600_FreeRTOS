@@ -3,7 +3,7 @@
 
 #include <cmsis_os.h>
 
-#define MODBUS_RTU_RX_TIMEOUT    1000
+//#define MODBUS_RTU_RX_TIMEOUT    1000
 #define DATA_MAX_LEN             512
 
 typedef struct __Modbus_Callback
@@ -16,12 +16,14 @@ typedef struct __Modbus_Callback
   osStatus (*osDelay)(uint32_t millisec);
 }Modbus_Callback;
 
+extern int    MODBUS_RTU_RX_TIMEOUT;
 extern char g_uart3RxCpltFlag;
 
 int MODBUS_Init(UART_HandleTypeDef *uart);
 void MODBUS_Register_Callback(Modbus_Callback *callback);
 
 int MODBUS_ReadRegisterFC03(unsigned char addr, unsigned short start_reg, unsigned short nb, unsigned char *res);
+int MODBUS_ReadRegisterFC04(unsigned char addr, unsigned short start_reg, unsigned short nb, unsigned char *res);
 int MODBUS_WriteRegisterFC06(unsigned char addr, unsigned short reg, unsigned char *writeData);
 int MODBUS_WriteRegisterFC10(unsigned char addr, unsigned short start_reg, unsigned short nb, unsigned char nbyte, unsigned char *writeData);
 

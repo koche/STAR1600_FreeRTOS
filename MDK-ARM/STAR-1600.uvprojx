@@ -52,7 +52,7 @@
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
           <DebugInformation>1</DebugInformation>
-          <BrowseInformation>1</BrowseInformation>
+          <BrowseInformation>0</BrowseInformation>
           <ListingPath></ListingPath>
           <HexFormatSelection>1</HexFormatSelection>
           <Merge32K>0</Merge32K>
@@ -348,7 +348,7 @@
           <Cads>
             <interw>1</interw>
             <Optim>4</Optim>
-            <oTime>1</oTime>
+            <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
             <Strict>0</Strict>
@@ -360,12 +360,12 @@
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <uC99>0</uC99>
-            <useXO>1</useXO>
+            <useXO>0</useXO>
             <VariousControls>
               <MiscControls>--C99</MiscControls>
               <Define>USE_HAL_DRIVER,STM32L475xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc;../Drivers/STM32L4xx_HAL_Driver/Inc;../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Middlewares/ST/STM32_USB_Device_Library/Core/Inc;../Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc;../Drivers/CMSIS/Device/ST/STM32L4xx/Include;../Middlewares/Third_Party/FatFs/src;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;../Drivers/CMSIS/Include;../Library;../example/modbus;../BSP_STM32L4-INNO</IncludePath>
+              <IncludePath>../Inc;../Drivers/STM32L4xx_HAL_Driver/Inc;../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Middlewares/ST/STM32_USB_Device_Library/Core/Inc;../Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc;../Drivers/CMSIS/Device/ST/STM32L4xx/Include;../Middlewares/Third_Party/FatFs/src;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;../Drivers/CMSIS/Include;../Library;../example/modbus;..\BSP_STM32L4-INNO</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -520,11 +520,6 @@
               <FileName>dma.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Src/dma.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32L4_eval.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Src\testProg\stm32L4_eval.c</FilePath>
             </File>
             <File>
               <FileName>stm32l4xx_callback.c</FileName>
@@ -822,9 +817,9 @@
               <FilePath>..\example\modbus\modbus_sample.c</FilePath>
             </File>
             <File>
-              <FileName>uart_TX_RX_WS211x_sigfox.c</FileName>
+              <FileName>adc_sample.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\example\sigfox\uart_TX_RX_WS211x_sigfox.c</FilePath>
+              <FilePath>..\example\adc\adc_sample.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -836,10 +831,15 @@
               <FileType>4</FileType>
               <FilePath>..\Library\libModbusRTU.lib</FilePath>
             </File>
+            <File>
+              <FileName>libADC.lib</FileName>
+              <FileType>4</FileType>
+              <FilePath>..\Library\libADC.lib</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
-          <GroupName>BSP_STM32L4-INNO</GroupName>
+          <GroupName>INNO_EVAL</GroupName>
           <Files>
             <File>
               <FileName>stm32L4_eval.c</FileName>

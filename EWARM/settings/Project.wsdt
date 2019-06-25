@@ -18,14 +18,14 @@
           
           
           
-        <Column0>326</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+        <Column0>366</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
       </Workspace>
       <TerminalIO/>
     <Debug-Log><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1528</ColumnWidth1></Debug-Log><Find-All-References><ColumnWidth0>664</ColumnWidth0><ColumnWidth1>94</ColumnWidth1><ColumnWidth2>1138</ColumnWidth2></Find-All-References></Static>
     <Windows>
       
       
-    <Wnd1>
+    <Wnd2>
         <Tabs>
           <Tab>
             <Identity>TabID-25881-4211</Identity>
@@ -33,11 +33,11 @@
             <Factory>Workspace</Factory>
             <Session>
               
-            <NodeDict><ExpandedNode>STAR-1600</ExpandedNode><ExpandedNode>STAR-1600/Application</ExpandedNode><ExpandedNode>STAR-1600/Application/BSP_STM32L4-INNO</ExpandedNode><ExpandedNode>STAR-1600/Application/User</ExpandedNode><ExpandedNode>STAR-1600/Application/example</ExpandedNode><ExpandedNode>STAR-1600/Application/example/modbus</ExpandedNode><ExpandedNode>STAR-1600/Application/example/sigfox</ExpandedNode><ExpandedNode>STAR-1600/Drivers</ExpandedNode><ExpandedNode>STAR-1600/Library</ExpandedNode><ExpandedNode>STAR-1600/Middlewares</ExpandedNode><ExpandedNode>STAR-1600/Output</ExpandedNode></NodeDict></Session>
+            <NodeDict><ExpandedNode>STAR-1600</ExpandedNode><ExpandedNode>STAR-1600/Application</ExpandedNode><ExpandedNode>STAR-1600/Application/BSP_STM32L4-INNO</ExpandedNode><ExpandedNode>STAR-1600/Application/example</ExpandedNode><ExpandedNode>STAR-1600/Application/example/adc</ExpandedNode><ExpandedNode>STAR-1600/Application/example/modbus</ExpandedNode><ExpandedNode>STAR-1600/Library</ExpandedNode><ExpandedNode>STAR-1600/modbus</ExpandedNode></NodeDict></Session>
           </Tab>
         </Tabs>
         
-      <SelectedTab>0</SelectedTab></Wnd1><Wnd4>
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd3>
         <Tabs>
           <Tab>
             <Identity>TabID-3862-4214</Identity>
@@ -47,20 +47,20 @@
           </Tab>
         <Tab><Identity>TabID-27441-13561</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab><Tab><Identity>TabID-2846-1571</Identity><TabName>References</TabName><Factory>Find-All-References</Factory><Session/></Tab></Tabs>
         
-      <SelectedTab>0</SelectedTab></Wnd4></Windows>
+      <SelectedTab>0</SelectedTab></Wnd3></Windows>
     <Editor>
       
       
       
       
-    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\example\sigfox\uart_TX_RX_WS211x_sigfox.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>107</SelStart2><SelEnd2>107</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Src\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>108</YPos2><SelStart2>4677</SelStart2><SelEnd2>4677</SelEnd2></Tab><ActiveTab>1</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Src\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>74</YPos2><SelStart2>3758</SelStart2><SelEnd2>3758</SelEnd2></Tab><ActiveTab>0</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\example\modbus\modbus_sample.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>97</YPos2><SelStart2>2235</SelStart2><SelEnd2>2235</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Library\modbus_rtu.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>1303</SelStart2><SelEnd2>1440</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>298</YPos2><SelStart2>12876</SelStart2><SelEnd2>12876</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\example\adc\adc_sample.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>332</SelStart2><SelEnd2>332</SelEnd2></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
     <Positions>
       
       
       
       
       
-    <Top><Row0><Sizes><Toolbar-014969A0><key>iaridepm.enu1</key></Toolbar-014969A0></Sizes></Row0></Top><Left><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>624</Bottom><Right>420</Right><x>-2</x><y>-2</y><xscreen>155</xscreen><yscreen>129</yscreen><sizeHorzCX>80729</sizeHorzCX><sizeHorzCY>145434</sizeHorzCY><sizeVertCX>219792</sizeVertCX><sizeVertCY>705750</sizeVertCY></Rect></Wnd1></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd4><Rect><Top>-2</Top><Left>-2</Left><Bottom>215</Bottom><Right>1922</Right><x>-2</x><y>-2</y><xscreen>1924</xscreen><yscreen>217</yscreen><sizeHorzCX>1002083</sizeHorzCX><sizeHorzCY>244645</sizeHorzCY><sizeVertCX>80729</sizeVertCX><sizeVertCY>145434</sizeVertCY></Rect></Wnd4></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+    <Top><Row0><Sizes><Toolbar-01496970><key>iaridepm.enu1</key></Toolbar-01496970></Sizes></Row0><Row1><Sizes/></Row1></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>574</Bottom><Right>440</Right><x>-2</x><y>-2</y><xscreen>51</xscreen><yscreen>56</yscreen><sizeHorzCX>26563</sizeHorzCX><sizeHorzCY>63134</sizeHorzCY><sizeVertCX>230208</sizeVertCX><sizeVertCY>649380</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>265</Bottom><Right>1922</Right><x>-2</x><y>-2</y><xscreen>1924</xscreen><yscreen>267</yscreen><sizeHorzCX>1002083</sizeHorzCX><sizeHorzCY>301015</sizeHorzCY><sizeVertCX>26563</sizeVertCX><sizeVertCY>63134</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
   </Desktop>
 </Workspace>
 
